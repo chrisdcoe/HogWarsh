@@ -1,0 +1,24 @@
+﻿@model HogWarsh.Models.Student
+@{
+    ViewBag.Title = "Enroll";
+}
+
+<h2>What is your student's information?</h2>
+
+@using (@Html.BeginForm("ActuallyEnroll", "Student"))
+{
+    <div class="row">
+        <div class="col-md-6">Name:</div>
+        <div class="col-md-6">@Html.TextBoxFor(x => x.Name)</div>
+    </div>
+
+    <div class="row">
+        @Html.DropDownListFor(x => x.Species, 
+            new SelectList(Enum.GetValues(typeof(HogWarsh.Models.Species))),
+            "Select Species")
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12"><input type="submit" value="Enroll!" /></div>
+    </div>
+}
