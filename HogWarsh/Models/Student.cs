@@ -16,14 +16,18 @@ namespace HogWarsh.Models
     public enum Species
     {
         Badger,
+        Bat,
         Cat,
+        Dog,
         Deer,
+        Fish,
         Fox,
         Lizard,
         Mouse,
         Otter,
         Parrot,
         Rabbit,
+        Raccoon,
         Skunk,
         Wolf
     }
