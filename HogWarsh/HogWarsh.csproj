@@ -156,6 +156,7 @@
     <Compile Include="Models\House.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\HouseRepository.cs" />
     <Compile Include="Repositories\StudentRepository.cs" />
   </ItemGroup>
   <ItemGroup>

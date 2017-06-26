@@ -13,9 +13,11 @@
     </div>
 
     <div class="row">
-        @Html.DropDownListFor(x => x.Species, 
+        <div class="col-md-12">
+            @Html.DropDownListFor(x => x.Species,
             new SelectList(Enum.GetValues(typeof(HogWarsh.Models.Species))),
             "Select Species")
+        </div>
     </div>
     
     <div class="row">
